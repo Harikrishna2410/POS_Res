@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Edittext_form">
+    <item name="android:fontFamily">@font/lato_regular</item>
+    <item name="android:textFontWeight">700</item>
+    <item name="android:textSize">17dp</item>
+    <item name="android:textColor">#000000</item>
+  </style>
+
+  <style name="list_item_textview">
+    <item name="android:fontFamily">@font/lato_regular</item>
+    <item name="android:textFontWeight">500</item>
+    <item name="android:textSize">18dp</item>
+    <item name="android:textColor">@color/white</item>
+  </style>
+
+  <style name="Textview_form">
+    <item name="android:fontFamily">@font/lato_regular</item>
+    <item name="android:textFontWeight">700</item>
+    <item name="android:textSize">18dp</item>
+    <item name="android:textColor">#494949</item>
+  </style>
+  <style name="splash_screen_Swipe">
+    <item name="elevation">8dp</item>
+    <item name="text_color">@color/white</item>
+    <item name="fontFamily">@font/lato_regular</item>
+    <item name="android:textFontWeight">700</item>
+    <item name="background">@drawable/splash_screen_swipe_background</item>
+  </style>
+</resources>

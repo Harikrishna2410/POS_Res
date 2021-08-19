@@ -1,0 +1,121 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintLayout4"
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:background="@drawable/home_screen_header_bg"
+      android:elevation="4dp"
+      android:minHeight="?attr/actionBarSize"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+          android:id="@+id/products_new_design_iv_back_btn"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_marginStart="32dp"
+          android:src="@drawable/ic_arrow_left_square_icon_svg"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+          android:id="@+id/textView5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/lato_regular"
+          android:lineHeight="21.6dp"
+          android:text="All Products"
+          android:textColor="@color/black"
+          android:textFontWeight="700"
+          android:textSize="18dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/products_new_design_iv_reports"
+          app:layout_constraintStart_toEndOf="@+id/products_new_design_iv_back_btn"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+          android:id="@+id/products_new_design_iv_reports"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_marginEnd="32dp"
+          android:src="@drawable/ic_chart_svg"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_marginTop="20dp"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+
+        <EditText
+          android:id="@+id/etxt_search"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:background="@drawable/round_border"
+          android:drawableRight="@drawable/ic_search"
+          android:ems="10"
+          android:fontFamily="@font/sailec_regular"
+          android:hint="@string/search_here"
+          android:inputType="textPersonName"
+          android:padding="10dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/product_recyclerview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="?android:attr/selectableItemBackground">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+          android:id="@+id/image_no_product"
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:layout_marginTop="50dp"
+          android:padding="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/linearLayout6"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:gravity="right"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/fab_add"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:layout_weight="1"
+          android:clickable="true"
+          app:srcCompat="@drawable/ic_add"
+          tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

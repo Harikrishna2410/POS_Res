@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/offWhite">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/home_screen_header_bg"
+    android:minHeight="?attr/actionBarSize"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">\
+
+
+    <ImageView
+      android:id="@+id/home_screen_new_design_iv_back_btn"
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:layout_marginStart="32dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@mipmap/arrow_left_square_icon" />
+
+    <TextView
+      android:id="@+id/textView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/lato_regular"
+      android:lineHeight="21.6dp"
+      android:text="Restaurant POS"
+      android:textColor="@color/black"
+      android:textFontWeight="700"
+      android:textSize="18dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/home_screen_new_design_iv_reports"
+      app:layout_constraintStart_toEndOf="@+id/home_screen_new_design_iv_back_btn"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+      android:id="@+id/home_screen_new_design_iv_reports"
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@mipmap/chart" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<vector xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--
+  <item>
+    <shape android:shape="rectangle">
+      <corners android:radius="15dp" />
+      <gradient
+        android:angle="90"
+        android:endColor="@color/offWhite"
+        android:startColor="@color/white" />
+    </shape>
+  </item>
+-->
+  <!-- drawable/rectangle_9.xml -->
+  <vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="144dp"
+    android:height="144dp"
+    android:viewportWidth="144"
+    android:viewportHeight="144"
+    >
+
+    <group>
+
+      <clip-path
+        android:pathData="M15 0H129C137.284 0 144 6.71573 144 15V129C144 137.284 137.284 144 129 144H15C6.71573 144 0 137.284 0 129V15C0 6.71573 6.71573 0 15 0Z"
+        tools:ignore="VectorRaster" />
+
+      <group
+        android:translateX="1.054"
+        android:translateY="0"
+        android:pivotX="72"
+        android:pivotY="72"
+        android:scaleX="2.215"
+        android:scaleY="2.215"
+        android:rotation="90"
+        >
+
+        <path
+          android:pathData="M0 0V144H144V0"
+          >
+
+          <aapt:attr name="android:fillColor">
+
+            <gradient
+              android:type="linear"
+              android:startX="36"
+              android:startY="72"
+              android:endX="108"
+              android:endY="72"
+              >
+
+              <item
+                android:color="#FFFFFF"
+                android:offset="0"
+                />
+
+              <item
+                android:color="#F5F5F5"
+                android:offset="1"
+                />
+
+            </gradient>
+
+          </aapt:attr>
+
+        </path>
+
+      </group>
+
+    </group>
+
+  </vector>
+<!--</vector>-->

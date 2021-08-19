@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/offWhite">
+
+  <com.google.android.gms.ads.AdView
+    android:id="@+id/adView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    app:adSize="BANNER"
+    app:adUnitId="@string/admob_banner_ads_id"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/home_screen_header_bg"
+    android:elevation="4dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/textView4"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="22dp"
+      android:fontFamily="@font/lato_regular"
+      android:lineHeight="15.6dp"
+      android:text="Smart Solution for Your Restaurant"
+      android:textColor="@color/black"
+      android:textFontWeight="400"
+      android:textSize="13dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+      android:id="@+id/home_screen_new_design_txt_shopname"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:fontFamily="@font/lato_regular"
+      android:lineHeight="40.8dp"
+      android:text="oneline soft sell"
+      android:textAllCaps="true"
+      android:textColor="@color/black"
+      android:textFontWeight="700"
+      android:textSize="34dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+      android:id="@+id/home_screen_new_design_txt_title"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="15dp"
+      android:fontFamily="@font/lato_regular"
+      android:lineHeight="20dp"
+      android:text="Good morning Pathik"
+      android:textColor="#b8b8b8"
+      android:textFontWeight="400"
+      android:textSize="16dp"
+      app:layout_constraintBottom_toTopOf="@+id/home_screen_new_design_txt_shopname"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+      android:id="@+id/home_screen_new_design_iv_about_us"
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="24dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:src="@drawable/ic_info_square" />
+
+    <ImageView
+      android:id="@+id/home_screen_new_design_iv_logout"
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="32dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:src="@drawable/ic_lock" />
+
+    <TextView
+      android:id="@+id/textView7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:fontFamily="@font/lato_regular"
+      android:lineHeight="21.6dp"
+      android:text="Restaurant POS"
+      android:textColor="@color/black"
+      android:textFontWeight="700"
+      android:textSize="18dp"
+      app:layout_constraintBottom_toTopOf="@+id/home_screen_new_design_txt_title"
+      app:layout_constraintEnd_toStartOf="@+id/home_screen_new_design_iv_logout"
+      app:layout_constraintStart_toEndOf="@+id/home_screen_new_design_iv_about_us"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/home_screen_new_design_rv"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="20dp"
+    app:layout_constraintBottom_toTopOf="@+id/adView2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

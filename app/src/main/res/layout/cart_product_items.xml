@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:padding="2dp">
+
+  <!--  <androidx.cardview.widget.CardView
+      android:id="@+id/cardView3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:background="@drawable/pos_product_item_bg"
+      android:foreground="?android:attr/selectableItemBackground"
+      app:cardCornerRadius="5dp"
+      app:cardElevation="10dp"
+      app:cardPreventCornerOverlap="false"
+      tools:layout_editor_absoluteX="5dp">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+              android:id="@+id/cart_product_image"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_weight="1"
+              android:contentDescription="TODO"
+              android:scaleType="centerCrop"
+              app:srcCompat="@drawable/image_placeholder" />
+          </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:paddingLeft="10dp">
+
+          <TextView
+            android:id="@+id/txt_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sailec_regular"
+            android:text="@string/product_name"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+          <TextView
+            android:id="@+id/txt_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sailec_regular"
+            android:padding="2dp"
+            android:text="1 kg"
+            android:textColor="#EA1D2C" />
+
+          <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sailec_regular"
+            android:padding="2dp"
+            android:text="$96.00"
+            android:textColor="#EA1D2C" />
+
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:layout_marginRight="10dp"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+              android:id="@+id/img_delete"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              app:srcCompat="@drawable/ic_delete_cart"
+              tools:ignore="VectorDrawableCompat" />
+          </LinearLayout>
+
+
+          <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_shape"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+              android:id="@+id/txt_minus"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:drawableLeft="@drawable/icon_minus"
+
+              android:paddingLeft="10dp"
+              android:paddingTop="5dp"
+              android:paddingRight="10dp"
+              android:paddingBottom="5dp"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+            <TextView
+              android:id="@+id/txt_number"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:paddingLeft="10dp"
+
+              android:paddingTop="5dp"
+              android:paddingRight="10dp"
+              android:paddingBottom="5dp"
+              android:text="1"
+              android:textSize="13sp"
+              android:textStyle="bold" />
+
+            <TextView
+              android:id="@+id/txt_plus"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:paddingLeft="10dp"
+              android:paddingTop="5dp"
+              android:paddingRight="10dp"
+              android:paddingBottom="5dp"
+              android:text="+"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+          </LinearLayout>
+
+
+        </LinearLayout>
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:layout_marginStart="2dp"
+      android:layout_marginEnd="2dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:background="@drawable/pos_cart_activity_item_bg">
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+          android:id="@+id/cart_product_image"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/ic_image_sample_test" />
+
+      </androidx.cardview.widget.CardView>
+
+      <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_bin_icon_svg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+      <TextView
+        android:id="@+id/txt_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="500g"
+        android:theme="@style/pos_item_fonts"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_item_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_item_name" />
+
+      <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="30$"
+        android:theme="@style/pos_item_fonts"
+        app:layout_constraintStart_toEndOf="@+id/cardView4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_item_name" />
+
+      <TextView
+        android:id="@+id/txt_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Product Name"
+        android:theme="@style/pos_item_fonts"
+        app:layout_constraintStart_toEndOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4" />
+
+      <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_shape"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:theme="@style/pos_item_fonts"
+        app:layout_constraintBottom_toBottomOf="@+id/img_delete"
+        app:layout_constraintEnd_toStartOf="@+id/img_delete"
+        app:layout_constraintTop_toTopOf="@+id/img_delete">
+
+        <TextView
+          android:id="@+id/txt_minus"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:drawableLeft="@drawable/icon_minus"
+
+          android:paddingLeft="10dp"
+          android:paddingTop="5dp"
+          android:paddingRight="10dp"
+          android:paddingBottom="5dp"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/txt_number"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:paddingLeft="10dp"
+          android:paddingTop="5dp"
+          android:paddingRight="10dp"
+          android:paddingBottom="5dp"
+          android:text="1"
+          android:textSize="13sp"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/txt_plus"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:paddingLeft="10dp"
+          android:paddingTop="5dp"
+          android:paddingRight="10dp"
+          android:paddingBottom="5dp"
+          android:text="+"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+      </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

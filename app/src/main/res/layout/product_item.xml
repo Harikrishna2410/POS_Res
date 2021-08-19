@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="false"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/customer_adapter_product_bg"
+      android:baselineAligned="false"
+      android:orientation="horizontal">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+          android:layout_width="88dp"
+          android:layout_height="88dp"
+          app:cardBackgroundColor="#00000000"
+          app:cardCornerRadius="25dp">
+
+          <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_sample_test" />
+
+        </androidx.cardview.widget.CardView>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+          android:id="@+id/txt_product_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Product Name"
+          android:textColor="@color/white"
+          android:theme="@style/list_item_textview" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/white" />
+
+        <TextView
+          android:id="@+id/txt_product_supplier"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:padding="2dp"
+          android:text="Product Supplier"
+          android:textColor="@color/white"
+          android:theme="@style/list_item_textview" />
+
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="5dp"
+          android:background="@color/white" />
+
+        <TextView
+          android:id="@+id/txt_product_sell_price"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:padding="2dp"
+          android:text="Sell Price"
+          android:textColor="@color/white"
+
+          android:theme="@style/list_item_textview" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="right"
+          android:orientation="vertical">
+
+          <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_bin_icon_svg"
+            tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+
+      </LinearLayout>
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

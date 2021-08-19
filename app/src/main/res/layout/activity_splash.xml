@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionName="loginActivity"
+    android:id="@+id/root_layout"
+    android:background="@drawable/splash_screen_bg"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/logo_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/ic_concrete_brick_middle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_concrete_brick_last"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_concrete_brick_svg"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.846" />
+
+
+    <com.ncorti.slidetoact.SlideToActView
+      android:id="@+id/swipe_btn"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="32dp"
+      app:animation_duration="250"
+      app:area_margin="4dp"
+      android:elevation="2dp"
+      app:inner_color="@color/grey_5"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:outer_color="@color/colorPrimary_light"
+      app:slider_height="70dp"
+      app:slider_locked="false"
+      app:text="Swipe"
+      app:text_appearance="@style/splash_screen_Swipe"
+      app:text_color="@color/white"
+      app:text_size="24sp" />
+
+<!--
+    <androidx.cardview.widget.CardView
+        android:id="@+id/swipe_btn"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:fadingEdgeLength="21dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/splash_screen_swipe_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Swipe"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/ic_arrow_vector"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".85" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
